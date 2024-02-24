@@ -7,7 +7,7 @@ Minimum setting for creating Chrome extensions with TypeScript
 # How to use this repository
 
 1. fork
-2. clone
+2. clone -> `npm i`
 3. build
 
 - `npm run build`
@@ -20,4 +20,4 @@ Minimum setting for creating Chrome extensions with TypeScript
 
 <img width="1336" alt="alt" src="https://github.com/daehwan2/chrome-extension-typescript-boilerplate/assets/53414542/e9841914-576b-448d-a2fc-032a06a777ae">
 
-5. Create your own extensions.
+5. Create your own extensions.!!!!! 👏
