@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "WAGURITTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.primary-button {
+  background-color: #ffaa40;
+  transition: 200ms;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+
+  padding: 8px 0;
+}
+
+.primary-button:hover {
+  transform: scale(1.01);
+}
+
+.number-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin-bottom: 10px;
+}
+
+.number-input {
+  width: 30px;
+  border-radius: 8px;
+  padding: 8px 4px;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+.header {
+  font-family: "WAGURITTF";
+  padding: 10px;
+  font-size: 20px;
+}
