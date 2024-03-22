@@ -1,7 +1,4 @@
-console.log("popup");
-
 const changeBtn = document.querySelector("#change-btn");
-
 chrome.storage.sync.get(
   ["number1", "number2", "number3", "number4", "number5", "number6"],
   (result) => {
@@ -36,6 +33,14 @@ changeBtn?.addEventListener("click", () => {
 
   chrome.storage.sync.set(
     { number1, number2, number3, number4, number5, number6 },
-    () => {}
+    () => {
+      // @ts-ignore
+      Swal.fire({
+        icon: "success",
+        title: "속일 준비 완료 😇",
+        showConfirmButton: false,
+        timer: 1000,
+      });
+    }
   );
 });
