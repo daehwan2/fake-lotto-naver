@@ -9,11 +9,18 @@ chrome.storage.sync.get(
     const number5 = result?.number5;
     const number6 = result?.number6;
 
-    (document.querySelector("#number1") as HTMLInputElement).value = number1;
-    (document.querySelector("#number2") as HTMLInputElement).value = number2;
-    (document.querySelector("#number3") as HTMLInputElement).value = number3;
-    (document.querySelector("#number4") as HTMLInputElement).value = number4;
-    (document.querySelector("#number5") as HTMLInputElement).value = number5;
+    if (number1 !== undefined)
+      (document.querySelector("#number1") as HTMLInputElement).value = number1;
+    if (number2 !== undefined)
+      (document.querySelector("#number2") as HTMLInputElement).value = number2;
+    if (number3 !== undefined)
+      (document.querySelector("#number3") as HTMLInputElement).value = number3;
+    if (number4 !== undefined)
+      (document.querySelector("#number4") as HTMLInputElement).value = number4;
+    if (number5 !== undefined)
+      (document.querySelector("#number5") as HTMLInputElement).value = number5;
+    if (number6 !== undefined)
+      (document.querySelector("#number6") as HTMLInputElement).value = number6;
   }
 );
 
