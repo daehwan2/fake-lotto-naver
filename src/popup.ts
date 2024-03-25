@@ -51,3 +51,12 @@ changeBtn?.addEventListener("click", () => {
     }
   );
 });
+
+// 초기화 버튼
+const resetButton = document.querySelector(".reset-icon");
+resetButton?.addEventListener("click", () => {
+  const inputList = document.querySelectorAll("input");
+  inputList.forEach((inputEl) => {
+    inputEl.value = "";
+  });
+});

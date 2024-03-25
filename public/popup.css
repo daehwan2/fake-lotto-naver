@@ -53,6 +53,12 @@
   /* display: none; */
 }
 
+.reset-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

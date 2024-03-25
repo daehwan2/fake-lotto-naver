@@ -10,19 +10,20 @@ chrome.storage.sync.get(
     const number4 = result?.number4;
     const number5 = result?.number5;
     const number6 = result?.number6;
+    const numbers: string[] = [];
+    numbers.push(number1);
+    numbers.push(number2);
+    numbers.push(number3);
+    numbers.push(number4);
+    numbers.push(number5);
+    numbers.push(number6);
 
-    const ballEl1 = document.querySelector(".winning_number .ball.type1");
-    const ballEl2 = document.querySelector(".winning_number .ball.type2");
-    const ballEl3 = document.querySelector(".winning_number .ball.type3");
-    const ballEl4 = document.querySelector(".winning_number .ball.type4");
-    const ballEl5 = document.querySelectorAll(".winning_number .ball.type5")[0];
-    const ballEl6 = document.querySelectorAll(".winning_number .ball.type5")[1];
+    const ballList = document.querySelectorAll(".winning_number .ball");
 
-    if (ballEl1 && number1) ballEl1.innerHTML = number1;
-    if (ballEl2 && number2) ballEl2.innerHTML = number2;
-    if (ballEl3 && number3) ballEl3.innerHTML = number3;
-    if (ballEl4 && number4) ballEl4.innerHTML = number4;
-    if (ballEl5 && number5) ballEl5.innerHTML = number5;
-    if (ballEl6 && number6) ballEl6.innerHTML = number6;
+    ballList.forEach((ballEl, idx) => {
+      if (numbers[idx]) {
+        ballEl.innerHTML = numbers[idx];
+      }
+    });
   }
 );

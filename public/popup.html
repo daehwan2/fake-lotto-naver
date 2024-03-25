@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Popup HTML</title>
-    <link rel="stylesheet" href="./sweetalert2.min.css" />
-    <link rel="stylesheet" href="./popup.css" />
-    <script src="./sweetalert2.min.js"></script>
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="header">네이버 로또 번호 조작</div>
-      <div class="content">
-        <div class="number-list">
-          <input type="number" id="number1" class="number-input" />
-          <input type="number" id="number2" class="number-input" />
-          <input type="number" id="number3" class="number-input" />
-          <input type="number" id="number4" class="number-input" />
-          <input type="number" id="number5" class="number-input" />
-          <input type="number" id="number6" class="number-input" />
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Popup HTML</title>
+  <link rel="stylesheet" href="./sweetalert2.min.css" />
+  <link rel="stylesheet" href="./popup.css" />
+  <script src="./sweetalert2.min.js"></script>
+</head>
 
-        <a
-          href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EB%A1%9C%EB%98%90"
-          target="_blank"
-          >로또 네이버 검색 결과 바로가기</a
-        >
-
-        <button type="button" id="change-btn" class="primary-button">
-          변경
-        </button>
+<body>
+  <div class="container">
+    <div class="header">네이버 로또 번호 조작</div>
+    <div class="content">
+      <div class="number-list">
+        <input type="number" id="number1" class="number-input" />
+        <input type="number" id="number2" class="number-input" />
+        <input type="number" id="number3" class="number-input" />
+        <input type="number" id="number4" class="number-input" />
+        <input type="number" id="number5" class="number-input" />
+        <input type="number" id="number6" class="number-input" />
+        <img src="./icons/reset-icon.svg" class="reset-icon" />
       </div>
-    </div>
 
-    <script src="./popup.js"></script>
-  </body>
+      <a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EB%A1%9C%EB%98%90"
+        target="_blank">로또 네이버 검색 결과 바로가기</a>
+
+      <button type="button" id="change-btn" class="primary-button">
+        변경
+      </button>
+    </div>
+  </div>
+
+  <script src="./popup.js"></script>
+</body>
+
 </html>
