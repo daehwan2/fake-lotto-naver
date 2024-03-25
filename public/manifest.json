@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "네이버 로또 번호 조작",
   "description": "네이버 로또 번호를 조작할 수 있습니다.",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "icons": {
     "16": "icons/logo.png",
     "32": "icons/logo.png",
